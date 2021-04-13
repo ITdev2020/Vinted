@@ -1,0 +1,18 @@
+#photosList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 30px;
+  background-color: #e7e7e7;
+  padding: 30px;
+}
+
+#photosList span {
+  display: flex;
+  flex-direction: column;
+}
+
+#photosList span img {
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 6px 5px 10px grey;
+}
