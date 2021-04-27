@@ -15,7 +15,8 @@ const Gallery = (props) => {
     window.addEventListener('scroll', () => {
         if (document.querySelector('#photosList') !== null) {
           if (
-            window.scrollY + window.innerHeight >= document.querySelector('#photosList').clientHeight + document.querySelector('#photosList').offsetTop
+            window.scrollY + window.innerHeight >= document.querySelector('#photosList').clientHeight
+            // window.scrollY + window.innerHeight >= document.querySelector('#photosList').clientHeight + document.querySelector('#photosList').offsetTop
           ) {
             console.log(`load`)
             setLoad(true)
